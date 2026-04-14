@@ -1,25 +1,33 @@
-# Agent Instructions
+# 에이전트 작업 지침
 
-These instructions apply to this directory and its subdirectories.
+이 지침은 `analysis/claw3d`와 그 하위 모든 폴더에 적용된다.
 
-## Scope
+## 범위
 
-- This folder is for analysis and planning assets only.
-- Do not modify `../claw3d_test` from work scoped to this folder unless explicitly requested.
+- 이 폴더는 Claw3D 분석 및 설계 자산 전용이다.
+- 이 폴더 작업 중에는 원칙적으로 `claw3d_lab`, `claw3d_ref`, `claw3d_test`의 코드를 직접 수정하지 않는다.
+- 코드 변경이 필요한 경우에는 별도 요청이나 명시적 작업 전환이 있어야 한다.
 
-## Writing Rules
+## 작성 규칙
 
-- Keep factual observations separate from assumptions.
-- Mark hypotheses clearly.
-- Prefer short, focused documents over one large dump file.
-- Use repo-relative references when pointing to files in `../claw3d_test`.
+- 사실과 해석을 구분한다.
+- 가설은 가설이라고 명시한다.
+- 하나의 문서에 너무 많은 주제를 섞지 않는다.
+- 가능한 한 파일 경로를 함께 적어 추적 가능하게 만든다.
 
-## Safety
+## 질의응답 반영 규칙
 
-- Do not place secrets, tokens, or personal machine instructions here.
-- Do not copy environment-specific data into committed documents.
+- 사용자 질문으로 개념 이해가 정리되거나 설명 방식이 더 쉬워졌다면 관련 분석 문서에 즉시 반영한다.
+- 사용자가 "이해 안 된다", "더 쉽게", "우리 프로젝트 기준으로" 같은 보정을 요청하면 문서도 그 기준에 맞게 수정한다.
+- 설명이 문서에 반영된 경우에는 같은 날짜의 `work_logs`에도 기록을 남긴다.
 
-## Change Style
+## 변경 방식
 
-- Prefer additive updates.
-- Keep document names stable once referenced by other notes.
+- 기존 분석 문서를 덮어쓰기보다 점진적으로 보강하는 방식을 우선한다.
+- 이미 다른 문서에서 참조하는 문서명은 함부로 바꾸지 않는다.
+- 비교표, 예시, 쉬운 표현이 필요하면 추가하되 원래 의미를 흐리지 않는다.
+
+## 보안 규칙
+
+- 비밀값, 토큰, 개인 환경 정보는 문서에 적지 않는다.
+- 큰 소스코드 원문을 그대로 복사해 넣지 않는다.

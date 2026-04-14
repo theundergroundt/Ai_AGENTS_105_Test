@@ -1,27 +1,33 @@
-# Agent Instructions
+# 에이전트 작업 지침
 
-These instructions apply to this repository and its subdirectories.
+이 지침은 이 저장소와 그 하위 모든 폴더에 적용된다.
 
-## Scope
+## 범위
 
-- This repo is for private analysis, planning, and product code.
-- Keep upstream codebases such as Claw3D in separate repositories.
+- 이 저장소는 private 분석, 설계, 제품 코드 작업을 위한 저장소다.
+- Claw3D 같은 upstream 코드베이스는 별도 저장소에서 유지한다.
 
-## Repo Rules
+## 저장소 규칙
 
-- Put Claw3D analysis under `analysis/claw3d`.
-- Put project-wide documentation under `docs`.
-- Put application code under `apps`.
-- Put throwaway or validation work under `experiments`.
-- Put upstream comparison notes under `refs/upstream-notes`.
+- Claw3D 분석 문서는 `analysis/claw3d` 아래에 둔다.
+- 프로젝트 공통 문서는 `docs` 아래에 둔다.
+- 애플리케이션 코드는 `apps` 아래에 둔다.
+- 실험성 검증 작업은 `experiments` 아래에 둔다.
+- upstream 비교 메모는 `refs/upstream-notes` 아래에 둔다.
 
-## Writing Rules
+## 문서 작성 규칙
 
-- Separate facts, hypotheses, and proposals.
-- Prefer small focused documents over large mixed notes.
-- Reference upstream files by path instead of copying large code blocks.
+- 사실, 가설, 제안을 구분해서 적는다.
+- 큰 문서 하나보다 주제가 분리된 작은 문서를 우선한다.
+- upstream 코드는 길게 복사하지 말고 파일 경로 중심으로 참조한다.
 
-## Safety
+## 분석 반영 규칙
 
-- Do not commit secrets, tokens, or machine-specific private instructions.
-- Do not vendor entire upstream repositories into this repo without an explicit reason.
+- 분석 중 사용자 질문으로 이해가 보정되거나 설명이 구체화되면 관련 분석 문서에도 함께 반영한다.
+- 채팅에서만 설명하고 끝내지 말고, 의미 있는 정리는 문서에 누적한다.
+- 문서 반영이 발생한 경우 해당 작업은 `work_logs`에도 함께 남긴다.
+
+## 보안 규칙
+
+- 비밀값, 토큰, 개인용 인증 정보, 로컬 환경 전용 지침은 커밋하지 않는다.
+- 명시적 이유 없이 upstream 저장소 전체를 이 repo 안으로 vendoring 하지 않는다.
