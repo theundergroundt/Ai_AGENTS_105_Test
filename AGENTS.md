@@ -4,22 +4,26 @@
 
 ## 범위
 
-- 이 저장소는 private 분석, 설계, 제품 코드 작업을 위한 저장소다.
-- Claw3D 같은 upstream 코드베이스는 별도 저장소에서 유지한다.
+- 이 저장소는 private 분석, 학습, 설계, 프로젝트 작업을 위한 허브다.
+- 외부 AI agent 코드베이스는 `forks` 아래에서 관리한다.
 
 ## 저장소 규칙
 
-- Claw3D 분석 문서는 `analysis/claw3d` 아래에 둔다.
-- 프로젝트 공통 문서는 `docs` 아래에 둔다.
-- 애플리케이션 코드는 `apps` 아래에 둔다.
-- 실험성 검증 작업은 `experiments` 아래에 둔다.
-- upstream 비교 메모는 `refs/upstream-notes` 아래에 둔다.
+- 외부 저장소 checkout은 `forks/<repo-name>` 아래에 둔다.
+- 요청 기반 분석 메모는 `analysis/requests` 아래에 둔다.
+- 외부 소스별 누적 분석은 `analysis/upstreams` 아래에 둔다.
+- 우리 프로젝트 관련 분석은 `analysis/projects` 아래에 둔다.
+- 단어/용어는 `knowledge/glossary.md`에 누적한다.
+- 설명이 길어지는 개념은 `knowledge/concepts/<topic>.md`로 분리한다.
+- 자체 개발 프로젝트는 `projects/<project-name>` 아래에 둔다.
+- 기존 `analysis/claw3d`는 레거시 정리본으로 취급한다.
 
 ## 문서 작성 규칙
 
 - 사실, 가설, 제안을 구분해서 적는다.
 - 큰 문서 하나보다 주제가 분리된 작은 문서를 우선한다.
-- upstream 코드는 길게 복사하지 말고 파일 경로 중심으로 참조한다.
+- 외부 코드 원문은 길게 복사하지 말고 파일 경로 중심으로 참조한다.
+- 사용자가 "이 단어가 뭐야", "이 개념이 뭐야"라고 물으면 `knowledge`에도 반영한다.
 
 ## 분석 반영 규칙
 
@@ -30,4 +34,4 @@
 ## 보안 규칙
 
 - 비밀값, 토큰, 개인용 인증 정보, 로컬 환경 전용 지침은 커밋하지 않는다.
-- 명시적 이유 없이 upstream 저장소 전체를 이 repo 안으로 vendoring 하지 않는다.
+- 명시적 이유 없이 외부 저장소 내용을 문서 영역에 vendoring 하지 않는다.
