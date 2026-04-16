@@ -8,3 +8,8 @@
 - runtime과 orchestrator 차이
 - agent와 skill 차이
 - gateway와 adapter 차이
+- sandbox
+- blueprint
+- runtime
+- orchestrator
+- gateway

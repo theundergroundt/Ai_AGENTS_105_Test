@@ -7,6 +7,7 @@
 - `claw3d.md`
 - `openclaw.md`
 - `hermes.md`
+- `nemoclaw.md`
 
 ## Rule
 
